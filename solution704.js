@@ -23,20 +23,22 @@ var search2 = function(arr,n){
     let j = arr.length-1;
     // j is the high pointer
     let mid;
-    if(n>arr[j]){
+    if(n>arr[j]||n<arr[i]){
         return -1;
     }
     while(i<=j){
         mid=Math.floor((i+j)/2);
-        if(arr[mid]>n){
+        if(arr[mid]==n){
+            return mid;
+        }
+        else if(arr[mid]>n){
             // value > n is the true and false condition
-            j=mid -1;
+            j=mid-1;
         }
         else{
             i=mid+1;
         }
     }
-    // please note even if the number is not in the array j will become -1;
-    return j;
+    return -1;
 }
 // if you want the the code in another language .. you can use chatGPT to transform it;
