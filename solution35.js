@@ -26,6 +26,7 @@ var SearchInsert1 = function(arr,n){
 
 // optimal
 // Binary Search
+// TC = O(log(N))
 var SearchInsert2 = function(arr,n){
     let i =0;
     let j = arr.length-1;
