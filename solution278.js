@@ -17,15 +17,14 @@ the first bad version. You should minimize the number of calls to the API.*/
 
 var solution1 = function(isBadVersion) {
     return function(n) {
-        for(let i=0;i<n;i++){
+        for(let i=0;i<=n;i++){
             if(!isBadVersion(i)){
                 return i-1;
             }
         }
         // dummy return 
-        return -1;
+        return n;
     };
-
 };
 
 
