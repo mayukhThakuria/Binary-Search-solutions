@@ -39,6 +39,7 @@ var findMedianSortedArrays1 = function(nums1,nums2){
 
 // optimal
 // we take elemnts from both the arrays and compare
+// TC = O(log(n))
 
 var findMedianSortedArrays = function(nums1, nums2) {
     if(nums2.length<nums1.length){
